@@ -188,12 +188,16 @@ body.page-transition {
 
 /* --- Layout de la Página de Poemas (poems.html) --- */
 
-/* SOLUCIÓN PARA FORZAR LA FUENTE BALLET EN EL POEMA (<pre>) */
+/* CAMBIO: Usar Cormorant Garamond para el cuerpo del poema */
 .poem-body {
-    font-family: 'Ballet', cursive !important; 
+    /* Usar Cormorant Garamond, la misma fuente que se usa por defecto y en la descripción */
+    font-family: 'Cormorant Garamond', serif !important; 
     white-space: pre-wrap; 
     text-align: center;
-    font-size: 1.4em; /* Este es el cambio que hace la letra más grande */
+    font-size: 1.2em; 
+    line-height: 1.8; /* Ajustar el interlineado para Cormorant Garamond */
+    font-weight: 300; /* Se ve mejor un peso ligero o normal con Garamond */
+    
 }
 
 .poem-grid {
